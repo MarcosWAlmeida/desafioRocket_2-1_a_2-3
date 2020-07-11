@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -117,6 +117,13 @@ body {
     height: 375px;
 }
 
+.starter:hover,
+.launchbase:hover,
+.gostack:hover {
+    border: 3px solid black;
+    cursor: pointer;
+}
+
 .launchbase {
     display: flex;
     flex-direction: column;
@@ -124,6 +131,8 @@ body {
     align-items: center;
     background:purple;
     border-radius: 10px;
+    width: 400px;
+    height: 375px;
 }
 
 .gostack {
@@ -133,7 +142,68 @@ body {
     align-items: center;
     background: purple;
     border-radius: 10px;
+    width: 400px;
+    height: 375px;
     
+}
+
+.starter p,
+.launchbase p,
+.gostack p {
+    font-family: 'Nunito' , sans-serif;
+    font-weight: bold;
+    letter-spacing: 3.10px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 15px;
+}
+
+.starter h5,
+.launchbase h5,
+.gostack h5 {
+    color: yellow;
+    text-transform: uppercase;
+    margin-top: 25px;
+}
+
+.modalOverlay {
+    
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0 , 0 , 0.7);
+    position: fixed;
+    top: 0;
+}
+
+.modal {
+    width: 500px;
+    height: 500px;
+    margin: 5% auto;
+    background-color: white;
+    height: 500px;
+    width: 500px;
+    position: relative;
+}
+
+iframe {
+    width: 100%;
+    height: 90%;
+    margin: 25px auto;
+}
+
+.modal .material-icons{
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+   
+}
+
+.modal .material-icons:last-child{
+    position: absolute;
+    right: 35px;
+    cursor: pointer;
+   
 }
 
 
